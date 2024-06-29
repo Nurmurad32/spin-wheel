@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin Wheel</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+    <div class="left-side">
+        <div class="wheel">
+            <canvas class="" id="canvas" width="500" height="500"></canvas>
+            <div class="center-circle" onclick="spin()">
+              <div class="triangle"></div>
+            </div>
+            
+          </div>
+          <button onclick="spin()">Spin it!</button>
+    </div>
+    <div class="right-side">
+        <h2>Add Names</h2>
+        <div class="inputArea" onchange="createWheel()">
+            
+      <textarea rows="13" cols="25">
+cat
+dog
+cow
+duck
+sheep
+goat
+bird
+neko
+chicken</textarea>
+    </div>
+    <div class="header">
+        <h1> is Winner!</h1>
+        <p id="winner"><span>"</span> NONE <span>"</span> </p>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="./script.js"></script>
+</section>
+  </body>
+</html>
